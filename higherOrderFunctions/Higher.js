@@ -55,6 +55,28 @@ console.log(findAverage(array))
 
 const avgReduce=array.reduce((a,b)=>a+b,0)/array.length;
 console.log(avgReduce)
+//factotial
+let n=0;
+const factotial=(n)=>{
+    if(n===0){
+        return 1;
+    }
+    else return n*factotial(n-1)
+}
+console.log(factotial(n))
+//hoisting
+console.log(x);
+console.log(findName('ash'))//hoisting
+function findName(name){
+    console.log(`my name is ${name}`)
+}
+var x=10;
+
+
+
+
+
+
 
 
 
