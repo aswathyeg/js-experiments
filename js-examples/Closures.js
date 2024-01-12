@@ -15,3 +15,14 @@
 }
 X();
 //if use let instead of var in forloop, there is no need of inner function close
+
+//eg:2
+function outer(){
+    var a=10
+    function inner(){
+        console.log(a)
+
+    }
+    return inner;//return is 
+}
+outer()();
