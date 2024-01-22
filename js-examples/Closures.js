@@ -27,3 +27,18 @@ function outer(){
     return inner;//return is 
 }
 outer()();
+//data hiding
+function outerCount(){
+    var count=0;
+    function add(){
+       count++ 
+       console.log(count)
+    }
+    return add
+}
+//console.log(count); count is hiding inside outerCount function. no outsiders can access it
+outerCount()();
+var counter1=outerCount();
+counter1();
+counter1();
+counter1();
